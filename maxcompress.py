@@ -6,8 +6,9 @@
 #
 # With that, you only need to run this from the terminal or ipython. Sample Output located at:
 #
-# https://github.com/oppressionslayer/maxcompress/blob/master/sample_8bit_one.txt
-# https://github.com/oppressionslayer/maxcompress/blob/master/sample_output_8bit_two.txt
+# https://github.com/oppressionslayer/maxentropy/blob/master/sample_8bit_one.txt
+# https://github.com/oppressionslayer/maxentropy/blob/master/sample_output_8bit_two.txt
+# https://github.com/oppressionslayer/maxentropy/blob/master/maxcompress.py
 #
 # Creates a random file, stores it as hex, and my betterthanzip files are smaller than the zip 
 # compressed of the orighex.bin.
