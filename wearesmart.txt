@@ -42,7 +42,8 @@ Out[100]: 1009732533765201
 # USE THE NEGATIVE NUMBER. SOMEONE IS SMART ENOUGH TO DO IT. ARE YOU UP FOR THE CHALLENGE?
 # IF YOU DO IT HERE, I WILL APPLY THE METHOD TO THE ENTIRE .BIN AND WE WILL BE FAMOUS.
 
-# In [1169]: (4**31-1)^1009732533765201                                                                                       # Out[1169]: 4610676285893622702
+# In [1169]: (4**31-1)^1009732533765201                                                                                       
+# Out[1169]: 4610676285893622702
 
 # Using 4610676285893622702, and powers of 2 only, you can get back to 1009732533765201.
 # You can do this with even the million digits of AMILLIONRANDOMDIGITS.BIN. COOL HUH?
