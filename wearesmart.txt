@@ -124,3 +124,44 @@ y-j: J: 8271728916604518400
 AFTER  y<j: y,j,y^j,ABS(J-(Y^J)), (y*2)+1:  18446744073709551613 951643120250257406 -2019465067530403 16543457833209036805 18446744073709551613 1903286240500514809 -4611686018427387904
 y-j: J: 951643120250257406
 y:  9223372036854775806 j:  951643120250257406 y^j: 8271728916604518400
+
+
+
+
+Here is the python code to build the tree:
+
+vv=[] 
+y=63 
+j=33095679 #
+j=4610676285893622702 #4610676285893620817 #1009732533765201
+jj=j
+temp=1125899906842623 
+doublin=0
+doublin2=0
+for x in range(0,2): 
+  print("New Y: ", y) 
+  if (j*2)+1==y: 
+    print("yes") 
+  while j<((y//2)): 
+         print("j<y: j,y,y^j,ABS(J-(Y^J)), J*2: ", j, y,  y^j, abs(y-(y^j)),j*2)  
+         j=(j*2) 
+  print("j<y: j,y,y^j,J*2", j, y,  y^j, j*2)  
+  while y<j: 
+     #print("BEFORE y<j: y,j,y^j,ABS(J-(Y^J)), (y*2)+1: ", y,j,j-(((y*2)+1)^j),abs(j-(y^j)),(y)+1, (abs(j-(y^j)))^ (y)+1) 
+     prevdoublin = doublin
+     prevdoublin2 = doublin2
+     y=(y*2)+1 
+     #j=jj-(y^jj)
+     doublin = j-(((y*2)+1)^j)
+     doublin2 =  abs(j-(((y*2)+1)^j))
+     print("AFTER  y<j: y,j,y^j,ABS(J-(Y^J)), (y*2)+1: ", (y*2)+1,j,doublin, doublin2,(y*2)+1, (abs(j-(y*2^j)))^((y*2)+1), doublin^prevdoublin, doublin2^prevdoublin2)  
+  else: 
+     print("y-j: J:", j)     
+     j=y-j 
+  print("AFTER  y<j: y,j,y^j,ABS(J-(Y^J)), (y*2)+1: ", (y*2)+1,j,doublin, abs(j-(((y*2)+1)^j)),(y*2)+1, (abs(j-(y*2^j)))^((y*2)+1), doublin^prevdoublin)  
+  print("y-j: J:", j) 
+  print("y: ",y,"j: ",j,"y^j:", y^j) 
+  temp=j
+  y=y*2
+  j=temp//2
+
