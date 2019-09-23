@@ -45,6 +45,12 @@ Out[100]: 1009732533765201
 # In [1169]: (4**31-1)^1009732533765201                                                                                       
 # Out[1169]: 4610676285893622702
 
+# In [1171]: (4**31)
+# Out[1171]: 4611686018427387904
+
+# 4611686018427387904 can be divided by //2 all the way down to 256, which is the number that keeps
+# doubling to get you back to the original result
+
 # Using 4610676285893622702, and powers of 2 only, you can get back to 1009732533765201.
 # You can do this with even the million digits of AMILLIONRANDOMDIGITS.BIN. COOL HUH?
 # 1009732533765201 are the first 16 digit of  AMILLIONRANDOMDIGITS.BIN
