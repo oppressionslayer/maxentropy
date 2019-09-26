@@ -1,0 +1,53 @@
+# This article is to prove that //2 numbers of an original number can show up in a exploded version of that numbers
+# hex. This is interesting and i wanted to share. You can use a smaller number, add a bunch of 'f's to it, then reduce
+# it back to the original. Kindof cool, but more interesting is that all div//2 numbers seem to show up in the exploded
+# versions hex!
+
+# Ok, so, I took the first 18 digits, 100973253376520135, of RAND corporations random int. I dived //2 it
+# like this: 100973253376520135//2//2//2//2//2//2//2//2//2//2//2 all the way down to:
+# 49303346375253. Now, you can't multiply this number back to 100973253376520135. But when looking at
+# higher order values of 100973253376520135, i found this div2 number inside a number that can div2 back
+# to 100973253376520135!!! This is a cool find, and might be of interest to mathemeticians, so I wanted to 
+# share my findings.
+# 
+# 0x2cd754726a55  is 49303346375253. When you append f8fffffffffffff to the hex, you can div //2**49 all the 
+# way back down to 100973253376520135.  So a lower order div number, is in a higher order div number than can div2
+# all the way back to the original. I'm going to keep searching for these, to see how far i can div//2 a number, and then
+# find a higher order number that div's back. I think this is a cool finding and wanted to share with you. Thank you.
+#
+# In [1771]: getintanddec(100973253376520135//2//2//2//2//2//2//2//2//2//2//2)                                                                                                   
+# Out[1771]: (49303346375253, '0x2cd754726a55')
+#
+#  (49303346375253, '0x2cd754726a55') is in a high order number that div's down back to the original number!!! You can't
+# *2 back up to 100973253376520135 from 49303346375253, but you can create a higher order number that div's back down to 
+# 100973253376520135!!! Check it out:
+#
+# In [1261]: 0x2cd754726a55f8fffffffffffff//2**49                                                                                                                
+#  Out[1261]: 100973253376520135
+#
+#
+# In [1271]: Xploderiter(100973253376520135,49)                                                                                                                  
+# Out[1271]: 56842888285110345191322059538431
+#
+# In [1272]: getintanddec(Xploderiter(100973253376520135,49))                                                                                                    
+# Out[1272]: (56842888285110345191322059538431, '0x2cd754726a55f8fffffffffffff')  # That's the number we div'd down too.
+#
+# When you Xploderiter, you will find that the underlying hexs, minus the 'f's are numbers that are div//2 from the original!
+#
+#
+# 100973253376520135
+# 0x2cd754726a55f8fffffffffffff//2**49
+
+# In [1261]: 0x2cd754726a55f8fffffffffffff//2**49                                                                                                                
+# Out[1261]: 100973253376520135
+
+# Code you need to run these in ipython:
+
+def getintanddec(hm):
+  return hm, hex(hm)
+
+def Xploderiter(s, iter=1):
+  for x in range(0,iter):
+    temp = s+1
+    s = temp * 2 -1
+  return s
