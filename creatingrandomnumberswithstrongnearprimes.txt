@@ -6,6 +6,7 @@
  do it, and it takes a lot of math trying to get to primes, but i'm hoping to make you a believer that someone like googles
  alpha go, could do it. Regardless if  RANDs next prime is weak or strong. 
 
+This is theory, i'm generating these theories to prove a point, and i hope that point is to make believers of this challenge that it is beatable. Also, i wonder what the NSA thinks of this, lol.
 
 strongrandomnumber=1524307411995722575380934996670428710537817339549256899727383476361328976611532940321430596810311504804037382552628432694868152127396263371970621168709246920726181681678186641950136807646207344177850033058330590246617345554648137787398131199204207457762569572798430446
 
