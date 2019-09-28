@@ -1,0 +1,51 @@
+# Using algorithims, and logic to change the behaviour at a certain point, we 
+# can walk up to the strong prime 10099 from 131.
+
+up = 2
+y = 2048
+j=131
+for x in range ( 0, 13 ):
+   print(j)
+   j=j^y
+   if up != 0 or up < 0:
+     up=up-1
+     y=y*2
+   else:
+     y=y//2
+
+end result: 10099
+
+# I hope this helps in showing how algorithims and math can get to prime numbers that you may be looking for
+# I'm looking for others to help comment on what i'm working on and seeing if we can apply it to larger numbers.
+# we can always walk up from a smaller number, but how low can we go using algorithims like these? I've just
+# started this research and am upen to suggestions. Thank you.
+
+# Here are Two more climbs to a prime number with the powers of two
+# You will see something cool, you can walk up the tree two ways.
+# You can use this method to find the smallest number away from any prime
+# to climb up using powers of 2. I used the second method to find 10099's
+# smallest number to climb, and then worked further down that number by halving
+# a powers of two down to 131.
+
+# This first example climbs to prime of 1009. Now, while this is interesting
+# compare to the next run, when j = 1009
+# Climb to prime 1009
+j=1
+y=16
+for x in range(0,6):
+     print(j)
+     j=j^y
+     y=y*2
+print(j)
+
+# We know change j to 1009 and run this again. Once again, XORing up the chain
+# gets you to 1009 with the powers of two halving from 512. You might notice that
+# you also hit the prime 769 while walking up.
+
+j=1009
+y=16
+for x in range(0,6):
+     print(j)
+     j=j^y
+     y=y*2
+print(j)
