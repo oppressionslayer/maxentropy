@@ -15,7 +15,7 @@ for x in range ( 0, 13 ):
 
 end result: 10099
 
-# Here is another example getti to 100981 which is the next prime of RANDS number 100973
+# Here is another example getting to 100981 which is the next prime of RANDS number 100973
 
 up = 3
 y = 2**12
