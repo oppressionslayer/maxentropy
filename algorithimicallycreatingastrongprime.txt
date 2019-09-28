@@ -15,6 +15,23 @@ for x in range ( 0, 13 ):
 
 end result: 10099
 
+# Here is another example getti to 100981 which is the next prime of RANDS number 100973
+
+up = 3
+y = 2**12
+j=1413
+for x in range ( 0, 17 ):
+   if x == 16:
+      print(j)
+   j=j^y
+   if up != 0 or up < 0:
+     up=up-1
+     y=y*2
+     if y == 2**15:
+       y=y*2
+   else:
+       y=y//2
+
 # I hope this helps in showing how algorithims and math can get to prime numbers that you may be looking for
 # I'm looking for others to help comment on what i'm working on and seeing if we can apply it to larger numbers.
 # we can always walk up from a smaller number, but how low can we go using algorithims like these? I've just
