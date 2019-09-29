@@ -1,0 +1,40 @@
+## xx WTF xx
+
+In [1489]: 
+vv=[] 
+y=4095 #67108863 #3 # 8191 
+j=1009732533765201
+superintelligent = True
+logic=1
+g=1885
+for x in range(0,22): 
+  print("New Y: ", y) 
+  if (j*2)+1==y: 
+    print("yes") 
+  #while j<((y//2)): 
+  #       print("j<y: j,y,y^j,ABS(J-(Y^J)), J*2: ", j, y,  y^j, abs(y-(y^j)),j*2)  
+  #       j=(j*2)-1 
+  print("j<y: j,y,y^j,J*2", j, y,  y^j, j*2)  
+  while y<j: 
+     if superintelligent == logic: 
+         g=y^abs(j-(y^j))^((y*2)+1)
+     print("y<j: y,j,y^j,ABS(J-(Y^J)), y*2+1: ", y,j,y^j,abs(j-(y^j)),(y*2)+1, y^((y*2))+1,g) 
+     if superintelligent == logic: 
+       y=(y)
+     else:
+       y=(y*2)+1 
+     logic = not(logic)
+  #print("y<j: y,j,y^j,y*2+1: ", y,j,y^j,(y*2)+1 )  
+  else: 
+     print("y-j: J:", j)  
+     if superintelligent == logic:   
+       j=y-j 
+     else:
+       j=y^j
+  logic = not(logic)
+  print("y-j: J:", j) 
+  print("y: ",y,"j: ",j,"y^j:", y^j)  #100973253376520135-(j^100973253376520135),j^100973253376520135, y^j^100973253376520135, 100973253376520135-(y^100973253376520135)) 
+  oldy = y
+  y=4095 # 67108863 #3 #d[str(len(str(y))+1)][0] 
+  if oldy == y:
+    break
