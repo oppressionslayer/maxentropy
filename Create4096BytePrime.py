@@ -4,8 +4,8 @@
 # run this program with python3 not python2:
 # % python3 Createprime.py
 # This file recreates an irreducible prime
-# number agorithmiclly wich is 4096. On a 
-# bytes. on  dualcore macbook, and we 
+# number agorithmiclly wich is 4096 on a 
+# bytes level. On  dualcore macbook, and we 
 # are able to recreate it
 # in less than a second
 # on a macbook. repl.it times may vary.
