@@ -53,7 +53,10 @@ def creategodsanswerfromdevilsnum(j, y=0, yd=1):
     print("1st Column: iterx")
     print("2nd Column: y=Xploderiter(y,yd) # Meaning you could div//2 yd times to the previous answer")
     print("3rd Column: j-(((y*2)+1)^j)")
-    print("4th Column: (((abs(j-(y*2^j)))^((y*2)+1))+2)//2")
+    if even == False:
+      print("Your Devils Number and it's advocate: {}, {}".format(j, j+1))
+    else:
+      print("Your Devils Number and it's advocate: {}, {}".format(j, j-1))
     print("5th Column: j-(((y*2)+1)^j)^previous(j-(((y*2)+1)^j))")
     print("")
     print("Your Number: {}".format(origj))
