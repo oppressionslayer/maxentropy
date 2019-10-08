@@ -55,8 +55,9 @@ def creategodsanswerfromdevilsnum(j, y=0, yd=1):
     print("5th Column: j-(((y*2)+1)^j)^previous(j-(((y*2)+1)^j))")
     print("")
     print("Your Number: {}".format(origj))
-    print("Your Numbers Xploderiter: {}".format(origj*2+1))
+    print("Your Numbers Xploderiter: {} or {}".format(origj*2, origj*2+1))
     print("Your Devils Numbers: {}, {}".format(j, j+1))
+    print("XOR Columns 2 and 3 to see your numbers Xploderiter")
     print("")
     print(iterx, (y*2)+1,doublin, (((abs(j-(y*2^j)))^((y*2)+1))+2)//2, doublin^prevdoublin, )  
     iterx+=1
@@ -71,7 +72,8 @@ def creategodsanswerfromdevilsnum(j, y=0, yd=1):
     godsanswer=abs(j-(((y*2)+1)^j))
   print("")
   print("Your Number: {}".format(origj))
-  print("Your Numbers Xploderiter: {}".format(origj*2+1))
+  print("Your Numbers Xploderiter: {} or {}".format(origj*2, origj*2+1))
   print("Your Devils Numbers: {}, {}".format(j, j+1))
+  print("XOR Columns 2 and 3 to see your numbers Xploderiter")
   print("")
   #return len(bin(j)[2:]), j, origj 
