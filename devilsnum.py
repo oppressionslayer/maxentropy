@@ -95,7 +95,7 @@ def creategodsanswerfromdevilsnum(j, y=0, yd=1, usedevilsnum='yes'):
   print("XOR Columns 2 and 3 to see your numbers Xploderiter")
   print("")
   #return len(bin(j)[2:]), j, origj 
-  print("IF your on repl.it, just copy paste the entry below this message into the window and hit enter/return on your keboard keep testing different numbers:")
+  print("IF your on repl.it, just copy paste the entry below this message into the window and hit enter/return on your keboard to keep testing different numbers:")
   print("creategodsanswerfromdevilsnum(1009,187)")
 
 creategodsanswerfromdevilsnum(1009)
