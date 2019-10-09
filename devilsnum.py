@@ -24,7 +24,7 @@ def createdevilsnumSHIFT(hm):
   iterx+=11
   return ((1<<iterx)-1)^j
 
-def creategodsanswerfromdevilsnum(j, y=0, yd=1):
+def creategodsanswerfromdevilsnum(j, y=0, yd=1, usedevilsnum='yes'):
   doublin=0
   prevdoublin=0
   godsnum=0
@@ -35,7 +35,8 @@ def creategodsanswerfromdevilsnum(j, y=0, yd=1):
   even=False
   if j % 2 == 0:
      even=True
-  j = createdevilsnumSHIFT(j)
+  if usedevilsnum == 'yes':
+    j = createdevilsnumSHIFT(j)
   if j == "This works with odd numbers only right now":
     return "This works with odd numbers only right now"
   for x in range(0,1): 
