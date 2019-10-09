@@ -6,23 +6,12 @@
 # creategodsanswerfromdevilsnum(1009, 187, 2)
 
 def Xploderiter(s, iter=1):
-  for x in range(0,iter):
-    temp = s+1
-    s = temp * 2 -1
+  temp = s+1
+  s = (temp << (iter))-1
   return s
 
-def createdevilsnumSHIFT(hm):
-  #if hm % 2==0:
-  #  return "This works with odd numbers only right now"
-  y=1 
-  j=hm
-  loopbreak = j + 1
-  iterx=2
-  while y<loopbreak: 
-    y=(1<<iterx)-1 
-    iterx+=1
-  iterx+=11
-  return ((1<<iterx)-1)^j
+def createdevilsnumBITLENGTH(hm):
+ return (1<<hm.bit_length()<<12)-1^hm
 
 def creategodsanswerfromdevilsnum(j, y=0, yd=1, usedevilsnum='yes'):
   doublin=0
@@ -36,7 +25,7 @@ def creategodsanswerfromdevilsnum(j, y=0, yd=1, usedevilsnum='yes'):
   if j % 2 == 0:
      even=True
   if usedevilsnum == 'yes':
-    j = createdevilsnumSHIFT(j)
+    j = createdevilsnumBITLENGTH(j)
   if j == "This works with odd numbers only right now":
     return "This works with odd numbers only right now"
   for x in range(0,1): 
