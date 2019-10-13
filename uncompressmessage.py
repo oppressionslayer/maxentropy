@@ -37,9 +37,6 @@ for c in range(0,2500):
        start= 3
        firsttime = 0
   for y in range (start, lengthpattern):
-    if firsttime == 1:
-       y= 3
-       firsttime = 0
     if pattern[y]=='+':
        p()
     elif pattern[y]=='-':
