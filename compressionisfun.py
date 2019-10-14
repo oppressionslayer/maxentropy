@@ -1,3 +1,4 @@
+# use python3 not python2 to run
 # CompressionISFUN 
 # i wrote this to show 
 # that i can compress repitition
