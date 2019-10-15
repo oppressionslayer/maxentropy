@@ -1,0 +1,14 @@
+This is a short introduction on why random data can't be compressed using powers of 2, but why other data with repeating patterns can ( As shown with a below post ). This is a post for those new to compression and entropy. Here's a reduction ( this works for any number ). We can reduce the length of any number down to zero by subtracting a number by it's bitlength's powers of two, and repeating until we get to zero. What you don't know, as in the hh example below, is the powers of two number to move up by once you've created your number. The pattern is random. But other data, like a powers of two number or repeating text, always move up by a pattern, so you can compress them very well. Also other data that repeats as shown in my "Compression is FUN" example, have a repeating pattern to get to the integer representing it by XORing back up a tree. So while i can now compress other data with something i was exploring. and i can reduce AMillionRandomDigits (or any other true random number that has no repetition ) here to 999,999 bytes, it has no repeating pattern, so it takes a 25 byte alg ( after hh= in the example below ) to recreate the number. So a 25 byte algorithm to regenerate AMillionRandomDigits ( probably smaller in other programming language) is about all you can get using techniques that look for patterns but find none in random data (Obviously, but this is for the sake of those interested in how repetition and entropy are linked) I hope you enjoy this short introductory article on why looking for patterns can lead you to finding your own compression engine, but not be able to reduce a truly random number.
+
+# use python3 and pip install bitstring, it is your friend!
+from bitstring import BitString
+sshex=open('Downloads/AMillionRandomDigits.bin', 'rb').read()
+aa=BitString(sshex).int  
+len(str(aa)) = 1000000
+jj=(1<<aa.bit_length())-aa
+len(str(jj)) = 999999
+hh=(1<<jj.bit_length()+2)-jj 
+hh==aa 
+True
+
+While exploring this topic i found repeating patterns in text which is why i wrote the "compression is fun: example in a post below. I hope you enjoy it as much as i enjoy the topic of compression ( I can now compress data, and i never even searched how to, as i was trying to think out of the box on a topic i never explored). I thought out of the box, and out of it came this cool compression program i wrote, so trying to solve the impossible taught me how to compress using my own algorithms i used for study. Thats awesome to me, as i wasn't expecting it, and wanted to share my experience in exploring the challenge.
