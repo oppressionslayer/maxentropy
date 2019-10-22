@@ -1,6 +1,7 @@
 # Compress repetition
 
 from bitstring import BitString
+import gzip
 
 def compressnumberpatter(filename, hm, buf=0,hexbuf=0):
   zzread=open(filename, 'rb').read()
