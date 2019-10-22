@@ -1,3 +1,4 @@
+# use python3 not python2
 # Compress repetition
 
 from bitstring import BitString
