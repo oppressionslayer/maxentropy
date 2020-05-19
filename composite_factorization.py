@@ -13,6 +13,18 @@
 # In [152]: try_factorization_mod_one((1009732533765211)**239)                                                                                                  
 # Out[152]: [11344301]
 
+# Another Example:
+# In [323]: try_factorization_mod_one((1009*1013)**2)
+# or
+# In [325]: try_factorization_mod_one(1022117**2)
+# Out[325]: [1009]
+
+# In [156]: find_prime_factor(1022117)
+# 2 1009
+
+# No factorization is used, this is a pure mod method to extract primes from a number
+
+
 # Most factorization techiniques break down numbers into their prime components. I created a method
 # that breaks down a number into it's composite factors which can be rebuilt with 
 # build_composite_number:
