@@ -22,6 +22,12 @@
 # In [156]: find_prime_factor(1022117)
 # 2 1009
 
+# In [720]: pow((1009*29)**4,1)
+# Out[720]: 733088921637866641
+
+# In [721]: try_factorization_mod(733088921637866641)
+# Out[721]: [29, 17836, 18, 376, 12, 30, 2, 32, 128, 2, 2, 16]
+
 # No factorization is used, this is a pure mod method to extract primes from a number
 
 
