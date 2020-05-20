@@ -28,6 +28,12 @@
 # In [721]: try_factorization_mod(733088921637866641)
 # Out[721]: [29, 17836, 18, 376, 12, 30, 2, 32, 128, 2, 2, 16]
 
+# In [726]: (1009*1013)**2                                                                                                                                      
+# Out[726]: 1044723161689
+
+# In [727]: try_factorization_mod(1044723161689)                                                                                                                
+# Out[727]: [1009, 24, 42, 2, 8, 2, 22, 54, 2, 4, 2]
+
 # No factorization is used, this is a pure mod method to extract primes from a number
 
 
